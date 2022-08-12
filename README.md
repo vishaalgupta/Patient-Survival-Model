@@ -41,8 +41,9 @@ The structure of the project includes the following folders/files:
 
  
 ## Screenshots
+![Ethnicity Analysis](https://user-images.githubusercontent.com/93561950/184452328-0fd2fe15-da04-4342-b99a-87421401b670.png)
 
-DashBoard
+
 
 
 
