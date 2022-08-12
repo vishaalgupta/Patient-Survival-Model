@@ -46,6 +46,7 @@ The structure of the project includes the following folders/files:
 
 
 
+![Icu_type vs  Death](https://user-images.githubusercontent.com/93561950/184452548-fd0c911c-9fd2-493c-b328-b68b5afb9aed.png)
 
 
 
