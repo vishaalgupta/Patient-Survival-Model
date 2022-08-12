@@ -1,5 +1,5 @@
 # Patient-Survival-Model
-![dataset-cover.jpeg](Images/dataset-cover.jpeg)
+![dataset-cover.jpeg](Flask App/images/dataset-cover.jpeg)
 
 
 Project #4: Machine Learning Integration 
