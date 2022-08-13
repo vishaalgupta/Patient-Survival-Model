@@ -1,4 +1,5 @@
-![Patient Survival Prediction Cover Photo](https://user-images.githubusercontent.com/93561950/184451837-6e51ca9f-94cf-49ce-be1b-a70881b43c5d.jpg)
+![Patient Survival Prediction](https://user-images.githubusercontent.com/93561950/184466067-2264322f-f79a-4b31-91bb-82a368eff39d.jpg)
+
 # Patient Survival Prediction with Supervised Learning
 
 Project #4: Machine Learning Integration 
