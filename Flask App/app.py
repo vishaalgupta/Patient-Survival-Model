@@ -17,8 +17,44 @@ model = load('../ML-models/model_ExtraTrees.joblib')
 def homepage():
     return render_template("home.html")
 
+@app.route("/visualizations")
+def visualizations():
+    return render_template("visualizations.html")
+
+@app.route("/linearregression")
+def linearregression():
+    return render_template("linearregression.html")
+
+@app.route("/logisticregression")
+def logisticregression():
+    return render_template("logisticregression.html")
+
+@app.route("/knn")
+def knn():
+    return render_template("knn.html")
+
+@app.route("/randomforest")
+def randomforest():
+    return render_template("randomforest.html")
+
+@app.route("/adaboost")
+def adaboost():
+    return render_template("adaboost.html")
+
+@app.route("/extratrees")
+def extratrees():
+    return render_template("extratrees.html")
+
+@app.route("/About")
+def about():
+    return render_template("About.html")
+
+@app.route("/Contact")
+def contact():
+    return render_template("Contact.html")
+
 @app.route("/index")
-def home():
+def index():
     prediction_text = ""
     return render_template("index.html", result = prediction_text)
 
