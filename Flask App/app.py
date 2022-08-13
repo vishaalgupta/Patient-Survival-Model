@@ -14,7 +14,7 @@ app = Flask(__name__)
 model = load('../ML-models/model_ExtraTrees.joblib')
 
 @app.route("/")
-def barchart():
+def homepage():
     return render_template("Home.html")
 
 @app.route("/index")
