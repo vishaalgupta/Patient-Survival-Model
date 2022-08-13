@@ -35,79 +35,136 @@
     </nav>
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="750"
       data-image-height="419" id="carousel_f913">
-      <h3>Patient Information Form</h3>
-
-      <div>
-        <form action="/result" method="POST">
-          <label for="icu">ICU Death Probability</label>
-          <input type="number" id="icu" name="icu" data-toggle="tooltip" data-placement="top"
-            title="Enter values between -1.0 and 9.7" min="-1.0" max="9.7" step="0.1" required>
-          <br>
-          <label>Ventilation &nbsp;&nbsp;&nbsp;</label>
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="ventilation">
-            <label for="female">No</label>
-            <input type="radio" id="no" name="ventilation" checked>
-          <br>
-          <label for="gscVerbal">Glasgow Coma Scale (GCS) Verbal Score</label>
-          <select id="gscVerbal" name="gscVerbal" required>
-            <option value="empty"></option>
-            <option value="1.0">1.0</option>
-            <option value="2.0">2.0</option>
-            <option value="3.0">3.0</option>
-            <option value="4.0">4.0</option>
-            <option value="5.0">5.0</option>
-          </select>
-          <br>
-          <label for="gscEyes">GCS Eyes Score</label>
-          <select id="gscEyes" name="gscEyes" required>
-            <option value="empty"></option>
-            <option value="1.0">1.0</option>
-            <option value="2.0">2.0</option>
-            <option value="3.0">3.0</option>
-            <option value="4.0">4.0</option>
-          </select>
-          <br>
-          <label for="hospital">Hospital Death Probability</label>
-          <input type="number" id="hospital" name="hospital" data-toggle="tooltip" data-placement="top"
-            title="Enter values between -1.0 and 9.8" min="-1.0" max="9.8" step="0.1" required>
-          <br>
-          <label for="gscMotor">GCS Motor Score</label>
-          <select id="gscMotor" name="gscMotor" required>
-            <option value="empty"></option>
-            <option value="1.0">1.0</option>
-            <option value="2.0">2.0</option>
-            <option value="3.0">3.0</option>
-            <option value="4.0">4.0</option>
-            <option value="5.0">5.0</option>
-            <option value="6.0">6.0</option>
-          </select>
-          <br>
-          <label for="bpNon">Day 1 Minimum Systolic Blood Pressure, Noninvasive </label>
-          <input type="number" id="bpNon" name="bpNon" data-toggle="tooltip" data-placement="top"
-            title="Enter values between 41.03 and 160.0" min="41.03" max="160.0" step="0.01" required>
-          <br>
-          <label for="bp">Day 1 Minimum Systolic Blood Pressure </label>
-          <input type="number" id="bp" name="bp" data-toggle="tooltip" data-placement="top"
-            title="Enter values between 41.0 and 160.0" min="41.0" max="160.0" step="0.1" required>
-          <br>
-          <label for="age">Age</label>
-          <input type="number" id="age" name="age" data-toggle="tooltip" data-placement="top"
-            title="Enter values between 16 and 89" min="16" max="89" step="1" required>
-          <br>
-          <label for="minBP">Minimum Mean Blood Pressure</label>
-          <input type="number" id="minBP" name="minBP" data-toggle="tooltip" data-placement="top"
-            title="Enter values between 22.0 and 112.0" min="22.0" max="112.0" step="0.1" required>
-          <br>
-          <input type="submit" value="Submit">
-          <p>{{result}}</p>
-        </form>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h3>Patient Information Form</h3>
+            <div>
+              <form action="/result" method="POST">
+                <div class="row mb-3">
+                  <label for="icu" class="col-sm-2 col-form-label">ICU Death Probability</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="icu" name="icu" data-toggle="tooltip"
+                      data-placement="top" title="Enter values between -1.0 and 9.7" min="-1.0" max="9.7" step="0.1"
+                      style="width: 100px;" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">Ventilation &nbsp;&nbsp;&nbsp;</label>
+                  <div class="col-sm-10">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="ventilation" value="0">
+                    <label for="female">No</label>
+                    <input type="radio" id="no" name="ventilation" value="1" checked>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="gscVerbal" class="col-sm-2 col-form-label">Glasgow Coma Scale (GCS) Verbal Score</label>
+                  <div class="col-sm-10">
+                    <select id="gscVerbal" name="gscVerbal" required>
+                      <option value="empty"></option>
+                      <option value="1.0">1.0</option>
+                      <option value="2.0">2.0</option>
+                      <option value="3.0">3.0</option>
+                      <option value="4.0">4.0</option>
+                      <option value="5.0">5.0</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="gscEyes" class="col-sm-2 col-form-label">GCS Eyes Score</label>
+                  <div class="col-sm-10">
+                    <select id="gscEyes" name="gscEyes" required>
+                      <option value="empty"></option>
+                      <option value="1.0">1.0</option>
+                      <option value="2.0">2.0</option>
+                      <option value="3.0">3.0</option>
+                      <option value="4.0">4.0</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="hospital" class="col-sm-2 col-form-label">Hospital Death Probability</label>
+                  <div class="col-sm-10">
+                    <input type="number" id="hospital" name="hospital" data-toggle="tooltip" data-placement="top"
+                      title="Enter values between -1.0 and 9.8" min="-1.0" max="9.8" step="0.1" style="width: 100px;"
+                      required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="gscMotor" class="col-sm-2 col-form-label">GCS Motor Score</label>
+                  <div class="col-sm-10">
+                    <select id="gscMotor" name="gscMotor" required>
+                      <option value="empty"></option>
+                      <option value="1.0">1.0</option>
+                      <option value="2.0">2.0</option>
+                      <option value="3.0">3.0</option>
+                      <option value="4.0">4.0</option>
+                      <option value="5.0">5.0</option>
+                      <option value="6.0">6.0</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="bpNon" class="col-sm-2 col-form-label">Day 1 Minimum Systolic Blood Pressure, Noninvasive
+                  </label>
+                  <div class="col-sm-10">
+                    <input type="number" id="bpNon" name="bpNon" data-toggle="tooltip" data-placement="top"
+                      title="Enter values between 41.03 and 160.0" min="41.03" max="160.0" step="0.01"
+                      style="width: 100px;" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="bp" class="col-sm-2 col-form-label">Day 1 Minimum Systolic Blood Pressure </label>
+                  <div class="col-sm-10">
+                    <input type="number" id="bp" name="bp" data-toggle="tooltip" data-placement="top"
+                      title="Enter values between 41.0 and 160.0" min="41.0" max="160.0" step="0.1"
+                      style="width: 100px;" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="age" class="col-sm-2 col-form-label">Age</label>
+                  <div class="col-sm-10">
+                    <input type="number" id="age" name="age" data-toggle="tooltip" data-placement="top"
+                      title="Enter values between 16 and 89" min="16" max="89" step="1" style="width: 100px;" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="minBP" class="col-sm-2 col-form-label">Minimum Mean Blood Pressure</label>
+                  <div class="col-sm-10">
+                    <input type="number" id="minBP" name="minBP" data-toggle="tooltip" data-placement="top"
+                      title="Enter values between 22.0 and 112.0" min="22.0" max="112.0" step="0.1"
+                      style="width: 100px;" required>
+                  </div>
+                </div>
+                <input type="submit" value="Submit">
+                <p>{{result}}</p>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
   <script>
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
+    });
+    $('input[type=radio][id=no]').on('change', function () {
+      if ($(this).prop("checked") == true) {
+        $(this).val(1);
+        $("#yes").val(0);
+        console.log("No: " + $(this).val());
+        console.log("Yes: " + $("#yes").val());
+      }
+    });
+    $('input[type=radio][id=yes]').on('change', function () {
+      if ($(this).prop("checked") == true) {
+        $(this).val(1);
+        $("#no").val(0);
+        console.log("Yes: " + $(this).val());
+        console.log("No: " + $("#no").val());
+      }
     });
   </script>
 </body>
