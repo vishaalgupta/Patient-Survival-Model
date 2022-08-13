@@ -14,6 +14,10 @@ app = Flask(__name__)
 model = load('../ML-models/model_ExtraTrees.joblib')
 
 @app.route("/")
+def homepage():
+    return render_template("Home.html")
+
+@app.route("/index")
 def home():
     prediction_text = ""
     return render_template("index.html", result = prediction_text)
