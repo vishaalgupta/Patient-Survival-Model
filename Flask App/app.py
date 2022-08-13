@@ -13,7 +13,7 @@ app = Flask(__name__)
 ##Need to add connection to model in line below
 model = load('../ML-models/model_ExtraTrees.joblib')
 
-@app.route("/Home")
+@app.route("/")
 def barchart():
     return render_template("Home.html")
 
