@@ -80,7 +80,7 @@ def send():
     text =""
 
     if prediction == 1:
-        text = "Patient is not predicted to survive"
+        text = "Patient is predicted to not survive"
     else:
         text = "Patient is predicted to survive"
 
