@@ -14,7 +14,47 @@ app = Flask(__name__)
 model = load('ML-models/model_ExtraTrees.joblib')
 
 @app.route("/")
-def home():
+def homepage():
+    return render_template("home.html")
+
+@app.route("/visualizations")
+def visualizations():
+    return render_template("visualizations.html")
+
+@app.route("/linearregression")
+def linearregression():
+    return render_template("linearregression.html")
+
+@app.route("/logisticregression")
+def logisticregression():
+    return render_template("logisticregression.html")
+
+@app.route("/knn")
+def knn():
+    return render_template("knn.html")
+
+@app.route("/randomforest")
+def randomforest():
+    return render_template("randomforest.html")
+
+@app.route("/adaboost")
+def adaboost():
+    return render_template("adaboost.html")
+
+@app.route("/extratrees")
+def extratrees():
+    return render_template("extratrees.html")
+
+@app.route("/About")
+def about():
+    return render_template("About.html")
+
+@app.route("/Contact")
+def contact():
+    return render_template("Contact.html")
+
+@app.route("/index")
+def index():
     prediction_text = ""
     return render_template("index.html", result = prediction_text)
 
@@ -40,7 +80,7 @@ def send():
     text =""
 
     if prediction == 1:
-        text = "Patient is not predicted to survive"
+        text = "Patient is predicted to not survive"
     else:
         text = "Patient is predicted to survive"
 
@@ -54,7 +94,3 @@ def send():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
