@@ -156,7 +156,10 @@
 .u-section-1-2 .u-image-1 {
   min-height: 626px;
   background-image: url("images/ethnicity.png");
-  background-position: 50% 50%;
+  border: solid;
+  background-size: cover;
+  background-position: bottom;
+  /* background-position: 50% 50%; */
 }
 
 .u-section-1-2 .u-container-layout-1 {
@@ -647,3 +650,5 @@
     margin-right: -13px;
   }
 }
+
+
