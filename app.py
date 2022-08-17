@@ -85,7 +85,7 @@ def send():
         text = "Patient is predicted to survive"
 
     # create html content - either single variable, dictionary, or string
-    prediction_text = f"The survival prediction is: {text}."
+    prediction_text = "The survival prediction is: {}".format(text) 
 
     # send prediction to html page
     return render_template("index.html", result = prediction_text)
@@ -94,3 +94,7 @@ def send():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+
