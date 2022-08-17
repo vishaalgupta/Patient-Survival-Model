@@ -28,7 +28,7 @@
 
 .u-section-1-1 .u-image-1 {
   min-height: 626px;
-  background-image: url("Images/age-gender.png");
+  background-image: url("images/age-gender.png");
   background-position: center;
   background-size: contain;
 }
@@ -156,7 +156,7 @@
 
 .u-section-1-2 .u-image-1 {
   min-height: 626px;
-  background-image: url("Images/ethnicity.png");
+  background-image: url("images/ethnicity.png");
   border: solid;
   background-size: contain;
   background-position: bottom;
@@ -286,7 +286,7 @@
 
 .u-section-1-3 .u-image-1 {
   min-height: 626px;
-  background-image: url("Images/bodysystems.png");
+  background-image: url("images/bodysystems.png");
   background-size:contain;
   background-position:center;
   
@@ -415,7 +415,7 @@
 
 .u-section-1-4 .u-image-1 {
   min-height: 626px;
-  background-image: url("Images/gcs.png");
+  background-image: url("images/gcs.png");
   /* background-position: 50% 50%; */
   background-position: center;
   background-size: contain;
@@ -544,7 +544,7 @@
 
 .u-section-1-5 .u-image-1 {
   min-height: 626px;
-  background-image: url("Images/icutype.png");
+  background-image: url("images/icutype.png");
   background-position: center;
   background-size: contain;
 }
