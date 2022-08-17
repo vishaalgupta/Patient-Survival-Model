@@ -110,5 +110,6 @@ We have imbalanced data-set, to compensate the situation, the data-set was first
 Based on the testing accuracy we have decided to use Extra Trees Classifier as our model. 
 
 Patient Form
+
 ![Patient Form](images/Patient%20Form.png)
 
