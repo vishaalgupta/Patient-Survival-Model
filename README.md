@@ -41,11 +41,11 @@ On the basis of these factors, predict whether the patient will survive or not.
 
 The structure of the project includes the following folders/files: 
 
-* Flask App - including app.py, profile, and requirements.tx for using Flask App
-* static - including CSS folder and JS folder 
-* Resources - including the original and cleaned Patient survival data csv files
-* Images - including all the screenshots and pictures used for project 
-* ML-models - including all the machine learning models we have run: AdaBoost Classifier, Extra Trees Classifier, KNN, Linear Regression, Logistic Regression, Extra Trees
+* Flask App - app.py, profile, and requirements.tx for using Flask App
+* static - CSS folder and JS folder 
+* Resources - the original and cleaned patient survival data csv files
+* Images - screenshots and pictures used for project 
+* ML-models - machine learning models: AdaBoost Classifier, Extra Trees Classifier, KNN, Linear Regression, Logistic Regression, Extra Trees
                 and Random Forest Classifier
 
 
@@ -90,7 +90,7 @@ https://www.kaggle.com/datasets/mitishaagarwal/patient
 
 Patient survival prediction dataset.csv(31.41 MB)
 85 columns
-9000 rows
+91,700 rows
 
 
 ## Conclusions 
