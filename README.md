@@ -111,5 +111,4 @@ Based on the testing accuracy we have decided to use Extra Trees Classifier as o
 
 Patient Form
 
-![Patient Form](images/Patient%20Form.png)
-
+![Patient Form](https://user-images.githubusercontent.com/100645924/185009028-c792827a-e103-4c7c-92a0-2941f1d2e337.png)
