@@ -95,6 +95,20 @@ Patient survival prediction dataset.csv(31.41 MB)
 
 ## Conclusions 
 
-We have tried different machine learning models including: AdaBoost Classifier, KNN, Linear Regression, Logistic Regression, Random Forest Classifier, Extra Trees Classifier and Lasso
-Based on the results, we have decided to use AdaBoost Classifier as our model. 
+We have imbalanced data-set, to compensate the situation, the data-set was first oversampled and then scaled to fit all models.
+
+### Test Accuracy: 
+
+ 1. Linear Regression : 38.9% 
+ 2. Logistic Regression: 78.2%
+ 3. K Nearest Neighbors: 95.1%
+ 4. Random Forest Classifier: 98.7%
+ 5. AdaBoost Classifier: 80.7%
+ 6. Extra Trees Classifier: 99.5%
+
+
+Based on the testing accuracy we have decided to use Extra Trees Classifier as our model. 
+
+Patient Form
+![Patient Form](images/Patient%20Form.png)
 
