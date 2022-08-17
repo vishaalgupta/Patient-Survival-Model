@@ -107,7 +107,7 @@ We have imbalanced data-set, to compensate the situation, the data-set was first
  6. Extra Trees Classifier: 99.5%
 
 
-Based on the testing accuracy we have decided to use Extra Trees Classifier as our model. 
+Based on the testing accuracy we have decided to use "Extra Trees Classifier" as our model. 
 
 Patient Form
 
