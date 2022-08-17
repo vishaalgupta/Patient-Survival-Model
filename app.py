@@ -15,7 +15,7 @@ model = load('ML-models/model_ExtraTrees.joblib')
 
 @app.route("/")
 def homepage():
-    return render_template("home.html")
+    return render_template("Home.html")
 
 @app.route("/visualizations")
 def visualizations():
